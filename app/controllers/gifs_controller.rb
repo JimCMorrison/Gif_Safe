@@ -24,9 +24,16 @@ class GifsController < ApplicationController
   end
 
   def update
+    if @gif.update(gif_params)
+      redirect_to @gif
+    else
+      render 'edit'
+    end
   end
 
   def destroy
+    @gif.destroy
+    redirect_to gifs_path
   end
 
   private

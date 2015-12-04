@@ -1,4 +1,5 @@
 <div class="gifsIndexWrapper">
+  <%= link_to "Add A GIF", new_gif_path %>
   <% @gifs.each do |gif| %>
   <h3><%= link_to gif.tag, gif %></h3>
   <p><%= gif.url %></p>

@@ -3,5 +3,6 @@
   <p><%= @gif.url %></p>
   <p><%= @gif.description %></p>
 </div>
-
+<%= link_to 'Edit', edit_gif_path(@gif) %>
+<%= link_to 'Delete', gif_path(@gif), method: :delete, data: {confirm: "Are you sure?"} %>
 <%= link_to "All GIFS", gifs_path %>
