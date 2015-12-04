@@ -1,0 +1,8 @@
+<div class="gifsIndexWrapper">
+  <% @gifs.each do |gif| %>
+  <h3><%= link_to gif.tag, gif %></h3>
+  <p><%= gif.url %></p>
+  <p><%= time_ago_in_words(gif.created_at) %></p>
+  <% end %>
+
+</div>
