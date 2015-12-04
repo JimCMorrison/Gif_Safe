@@ -8,11 +8,11 @@ class GifsController < ApplicationController
   end
 
   def new
-    @gif = Gif.new
+    @gif = current_user.gifs.build
   end
 
   def create
-    @gif = Gif.new(gif_params)
+    @gif = current_user.gifs.build(gif_params)
     if @gif.save
       redirect_to @gif
     else
