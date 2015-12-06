@@ -1,7 +1,7 @@
 class GifsController < ApplicationController
   before_action :find_gif, only: [:show, :edit, :update, :destroy]
   def index
-    @gifs = Gif.all.order("created_at DESC")
+    @gifs = Gif.where(user_id: current_user).order("created_at DESC")
   end
 
   def show
