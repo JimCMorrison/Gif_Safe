@@ -9,6 +9,9 @@
   <div class="row">
     <% Gif.last(3).each do |gif| %>
     <div class="col-md-4">
+      <a href="#" class="thumbnail">
+        <img src="<%= gif.url %>">
+      </a>
       <h3><%=gif.tag%></h3>
       <p><%= gif.url %></p>
     </div>
