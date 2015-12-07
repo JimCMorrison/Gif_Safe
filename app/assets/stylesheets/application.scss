@@ -1,2 +1,12 @@
- @import "bootstrap-sprockets";
- @import "bootstrap";
+/*
+  *= require_self
+*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "gifs.scss";
+@import "home.scss";
+
+#navigation {
+	margin: 0px;
+	border-radius: 0px;
+}
