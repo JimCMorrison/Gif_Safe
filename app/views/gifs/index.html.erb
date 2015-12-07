@@ -1,5 +1,5 @@
 <div class="gifsIndexWrapper">
-  <%= link_to "Add A GIF", new_gif_path %>
+  <%= link_to "Add A GIF", new_gif_path, id: "add-gif", class: "btn btn-success" %>
   <div class="row">
     <% @gifs.each do |gif| %>
     <div class="col-md-4">
