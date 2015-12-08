@@ -5,6 +5,14 @@
 @import "bootstrap";
 @import "gifs.scss";
 @import "home.scss";
+
+//General Styling
+.header-form {
+	color: white;
+	width: 250px;
+}
+//GIF Styling
+
 .gif-tag {
 	color: white;
 	background-color: #47454C;
@@ -40,4 +48,8 @@ body {
 
 a {
 	color: white;
+}
+//Devise Styling
+.devise-trim {
+	width: 250px;
 }
