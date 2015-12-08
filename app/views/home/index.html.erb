@@ -7,8 +7,8 @@
 <div id="recently-added">
   <h2>Recently locked in a safe!</h2>
   <div class="row">
-    <% Gif.last(3).each do |gif| %>
-    <div class="col-md-4">
+    <% Gif.last(4).each do |gif| %>
+    <div class="col-md-3">
       <a href="#" class="thumbnail">
         <img src="<%= gif.url %>">
       </a>
