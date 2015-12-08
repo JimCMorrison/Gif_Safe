@@ -5,11 +5,39 @@
 @import "bootstrap";
 @import "gifs.scss";
 @import "home.scss";
-
+.gif-tag {
+	color: white;
+	background-color: #47454C;
+	display: inline-block;
+	text-align: center;
+	width: auto;
+	padding: 0 20px;
+}
+.gif-text {
+	color: white;
+}
+.gif-url {
+	color: black;
+}
+.gif-tag-url {
+  color: white;
+	background-color: #47454C;
+	display: inline-block;
+	text-align: center;
+	width: auto;
+	padding: 0 20px;
+}
+.center {
+	text-align: center;
+}
 #navigation {
 	margin: 0px;
 	border-radius: 0px;
 }
 body {
   background: #101010;
+}
+
+a {
+	color: white;
 }

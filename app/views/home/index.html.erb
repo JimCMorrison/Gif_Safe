@@ -12,8 +12,8 @@
       <a href="#" class="thumbnail">
         <img src="<%= gif.url %>">
       </a>
-      <h3><%=gif.tag%></h3>
-      <p><%= gif.url %></p>
+      <h3 class="gif-tag"><%=gif.tag%></h3>
+      <p class="gif-text">Link:  <input class="gif-url" type="text" value="<%= gif.url %>" data-copy="true"></p>
     </div>
     <% end %>
   </div>
