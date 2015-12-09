@@ -1,0 +1,20 @@
+<div id="homeJumbo" class="jumbotron">
+  <div class="container">
+    <h1>Save your favorite GIFs!</h1>
+    <p>Access your GIF library from anywhere, on any device!</p>
+  </div>
+</div>
+<div id="recently-added">
+  <h2>Recently locked in a safe!</h2>
+  <div class="row">
+    <% Gif.last(4).each do |gif| %>
+    <div class="col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="<%= gif.url %>">
+      </a>
+      <h3 class="gif-tag"><%=gif.tag%></h3>
+      <p class="gif-text">Link:  <input class="gif-url" type="text" value="<%= gif.url %>" data-copy="true"></p>
+    </div>
+    <% end %>
+  </div>
+</div>

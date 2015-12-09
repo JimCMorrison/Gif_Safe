@@ -1,0 +1,13 @@
+<div class="showGif">
+  <a href="#" class="thumbnail">
+    <img src="<%= @gif.url %>">
+  </a>
+  <div class="center">
+    <h3 class="gif-tag"><%= @gif.tag %></h3>
+    <p class="gif-text">Link:  <input class="gif-url" type="text" value="<%= @gif.url %>" data-copy="true"></p>
+    <p class="gif-text"><%= @gif.description %></p>
+    <%= link_to 'Edit', edit_gif_path(@gif), class: "btn btn-info" %>
+    <%= link_to 'Delete', gif_path(@gif), class: "btn btn-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+    <%= link_to "All GIFs", gifs_path, class: "btn btn-primary" %>
+  </div>
+</div>
